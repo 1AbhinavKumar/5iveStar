@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .textGradient {
-    background: -webkit-linear-gradient(#4338ca, #818cf8);
+    background: -webkit-linear-gradient(#3408e1, #0bf478);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .purpleShadow {
-    box-shadow: 3px 3px 1px 1px lavender;
+    box-shadow: 3px 3px 1px 1px rgb(8, 236, 125);
 }
 
 .purpleShadow:hover {
