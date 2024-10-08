@@ -2,6 +2,8 @@ import React from "react";
 import { Dancing_Script } from "next/font/google";
 import Button from "./Button";
 import Calendar from "./Calendar";
+import Link from "next/link";
+import AuthDetection from "./AuthDetection";
 const danf = Dancing_Script({ subsets: ["latin"] });
 
 export default function Hero() {
@@ -19,11 +21,8 @@ export default function Hero() {
         Create your productivity record and see how you do on
         <span className="font-semibold"> every day of every year.</span>
       </p>
-      <div className="grid grid-cols-2 gap-2 w-fit mx-auto">
-        <Button text="LOGIN"/>
-        <Button text="SIGN UP" dark/>
-      </div>
-      <Calendar demo/>
+      <AuthDetection />
+      <Calendar demo />
     </div>
   );
 }
